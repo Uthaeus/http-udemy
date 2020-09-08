@@ -42,7 +42,7 @@ class Blog extends Component {
                 {/* <Route path="/" exact render={() => <h1>Home</h1>} /> */}
                 
                 <Switch>
-                    {this.state.auth ? <Routs path="/new-post" component={AsyncNewPost} /> : null} 
+                    {this.state.auth ? <Route path="/new-post" component={AsyncNewPost} /> : null} 
                     <Route path="/posts/" component={Posts} />
                     <Route render={() => <h1>Not found</h1>} />
                     {/* <Redirect from="/" to="/posts" /> */}
